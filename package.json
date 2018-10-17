@@ -1,0 +1,36 @@
+{
+  "name": "pg_promise_northwind_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --verbose --inspect --watch ./.env ./db_logic/second.js",
+    "app": "nodemon --verbose --inspect --watch ./.env --watch ./app.js ./app.js",
+    "insp": "node --inspect ./db_logic/second.js",
+    "pm2": "pm2 start ./db_logic/second.js --watch -i 2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymon7/simple-db"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "sequelize",
+    "postgresql"
+  ],
+  "author": "Konrad Kuśmierz, Szymon Fiałkowski",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "finale-rest": "^1.0.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.5.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.39.0"
+  }
+}

@@ -1,0 +1,14 @@
+var path = require('path');
+
+module.exports = {
+  'config': {
+    dialect: 'postgres',
+    database: 'northwind',
+    username: 'username',
+    password: 'password',
+    port: 5432
+  },
+  'migrations-path': path.resolve(__dirname, 'migrations'),
+  'seeders-path': path.resolve(__dirname, 'seeders'),
+  'models-path': path.resolve(__dirname, 'models')
+};

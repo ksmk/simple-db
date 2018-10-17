@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "ksmk",
+    "password": "chujniax",
+    "database": "nortwhind",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "migrations-path": "./migrations",
+    "models-path": "./models"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
